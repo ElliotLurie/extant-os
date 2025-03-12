@@ -1,0 +1,51 @@
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+
+  - type: rpm-ostree
+    install:
+      # Apps
+      - gnome-online-accounts-gtk
+      - gnome-software
+
+      # System 
+      - florence
+      - gammastep-indicator
+      - ibus
+      - ibus-uniemoji
+      - ibus-typing-booster
+      - zsh
+      - zsh-autosuggestions
+      - zsh-syntax-highlighting
+
+      # Theming
+      - breeze-cursor-theme
+      - mint-themes
+      - mint-themes-gtk3
+      - mint-themes-gtk4
+      - mint-y-icon-theme
+      - source-foundry-hack-fonts
+      - xorg-x11-fonts-misc
+
+    remove:
+      # Apps replaced by Flatpaks
+      - atril
+      - galculator
+      - firefox
+      - firefox-langpacks
+      - libmousepad0
+      - mousepad
+      - ristretto
+      - xarchiver
+
+      # Themes replaced by mint-*
+      - greybird-dark-theme
+      - greybird-light-theme
+      - greybird-xfce4-notifyd-theme
+      - greybird-xfwm4-theme
+      - xfwm4-themes
+
+  - type: default-flatpaks
+    notify: true
