@@ -1,5 +1,5 @@
 ---
-name: red-hot-linux
+name: extant-os
 description: OS based on Univeral Blue with the XFCE desktop 
 base-image: quay.io/fedora-ostree-desktops/xfce-atomic
 image-version: 41

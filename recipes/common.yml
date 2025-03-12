@@ -25,7 +25,7 @@ modules:
       - mint-themes
       - mint-themes-gtk3
       - mint-themes-gtk4
-      - mint-y-icon-theme
+      - mint-y-icons
       - source-foundry-hack-fonts
       - xorg-x11-fonts-misc
 

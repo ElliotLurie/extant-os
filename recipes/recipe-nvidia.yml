@@ -1,5 +1,5 @@
 ---
-name: red-hot-linux-nvidia
+name: extant-os-nvidia
 description: OS based on Univeral Blue with the XFCE desktop (includes proprietary NVIDIA drivers)
 base-image: quay.io/fedora-ostree-desktops/xfce-atomic
 image-version: 41
