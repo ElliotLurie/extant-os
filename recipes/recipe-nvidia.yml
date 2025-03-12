@@ -11,5 +11,5 @@ modules:
       # Only contains NVIDIA driver files
       - rpmfusion-nonfree-nvidia-driver.repo
     install:
-      - akmod-nvidia-open
-      - xorg-x11-drv-nvidia-open-cuda
+      - akmod-nvidia
+      - xorg-x11-drv-nvidia-cuda
