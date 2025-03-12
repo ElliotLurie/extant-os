@@ -49,3 +49,16 @@ modules:
 
   - type: default-flatpaks
     notify: true
+    system:
+      install:
+        - ca.desrt.dconf-editor 
+        - org.gnome.dejadup
+        - org.gnome.evince
+        - org.gnome.evolution
+        - com.github.tchx84.flatseal
+        - org.gnome.fileroller
+        - org.mozilla.firefox
+        - org.libreoffice.libreoffice
+        - io.github.qalculate
+        - org.gnome.Totem
+      user: {}
