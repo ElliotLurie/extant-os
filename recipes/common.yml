@@ -56,7 +56,7 @@ modules:
         - org.gnome.Evince
         - org.gnome.Evolution
         - com.github.tchx84.flatseal
-        - org.gnome.Fileroller
+        - org.gnome.FileRoller
         - org.mozilla.firefox
         - org.libreoffice.Libreoffice
         - io.github.Qalculate
