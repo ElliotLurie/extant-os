@@ -55,7 +55,7 @@ modules:
         - org.gnome.DejaDup
         - org.gnome.Evince
         - org.gnome.Evolution
-        - com.github.tchx84.flatseal
+        - com.github.tchx84.Flatseal
         - org.gnome.FileRoller
         - org.mozilla.firefox
         - org.libreoffice.LibreOffice
