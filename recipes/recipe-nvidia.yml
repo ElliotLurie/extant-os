@@ -1,15 +1,8 @@
 ---
 name: extant-os-nvidia
 description: OS based on Univeral Blue with the XFCE desktop (includes proprietary NVIDIA drivers)
-base-image: quay.io/fedora-ostree-desktops/xfce-atomic
+base-image: ghcr.io/ublue-os/vauxite-nvidia
 image-version: 41
 
 modules:
   - from-file: common.yml
-  - type: rpm-ostree
-    repos:
-      # Only contains NVIDIA driver files
-      - rpmfusion-nonfree-nvidia-driver.repo
-    install:
-      - akmod-nvidia
-      - xorg-x11-drv-nvidia-cuda

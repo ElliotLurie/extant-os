@@ -52,13 +52,13 @@ modules:
     system:
       install:
         - ca.desrt.dconf-editor 
-        - org.gnome.dejadup
-        - org.gnome.evince
-        - org.gnome.evolution
+        - org.gnome.Dejadup
+        - org.gnome.Evince
+        - org.gnome.Evolution
         - com.github.tchx84.flatseal
-        - org.gnome.fileroller
+        - org.gnome.Fileroller
         - org.mozilla.firefox
-        - org.libreoffice.libreoffice
-        - io.github.qalculate
+        - org.libreoffice.Libreoffice
+        - io.github.Qalculate
         - org.gnome.Totem
       user: {}

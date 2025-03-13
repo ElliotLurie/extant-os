@@ -1,7 +1,7 @@
 ---
 name: extant-os
 description: OS based on Univeral Blue with the XFCE desktop 
-base-image: quay.io/fedora-ostree-desktops/xfce-atomic
+base-image: ghcr.io/ublue-os/vauxite-main
 image-version: 41
 
 modules:
