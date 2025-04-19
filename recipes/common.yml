@@ -9,16 +9,82 @@ modules:
       # Apps
       - gnome-online-accounts-gtk
       - gnome-software
+      - gparted
 
-      # System 
-      - florence
-      - gammastep-indicator
-      - ibus
-      - ibus-uniemoji
-      - ibus-typing-booster
+      # Cli
       - zsh
       - zsh-autosuggestions
       - zsh-syntax-highlighting
+
+      # Desktop
+      - NetworkManager-openconnect-gnome
+      - NetworkManager-openvpn-gnome
+      - NetworkManager-pptp-gnome
+      - NetworkManager-ssh-gnome
+      - NetworkManager-vpnc-gnome
+      - Thunar
+      - adwaita-gtk2-theme
+      - adwaita-icon-theme
+      - blueman
+      - desktop-backgrounds-compat
+      - gammastep-indicator
+      - glx-utils
+      - gnome-keyring-pam
+      - gtk-xfce-engine
+      - gvfs
+      - gvfs-archive
+      - gvfs-mtp
+      - initial-setup-gui
+      - lightdm-gtk
+      - mesa-dri-drivers
+      - mesa-vulkan-drivers
+      - network-manager-applet
+      - nm-connection-editor
+      - plymouth-system-theme
+      - thunar-archive-plugin
+      - thunar-media-tags-plugin
+      - thunar-volman
+      - xdg-user-dirs-gtk
+      - xfce4-about
+      - xfce4-appfinder
+      - xfce4-battery-plugin
+      - xfce4-clipman-plugin
+      - xfce4-cpugraph-plugin
+      - xfce4-datetime-plugin
+      - xfce4-panel
+      - xfce4-panel-profiles
+      - xfce4-places-plugin
+      - xfce4-power-manager
+      - xfce4-pulseaudio-plugin
+      - xfce4-screensaver
+      - xfce4-screenshooter-plugin
+      - xfce4-sensors-plugin
+      - xfce4-session
+      - xfce4-settings
+      - xfce4-systemload-plugin
+      - xfce4-taskmanager
+      - xfce4-terminal
+      - xfce4-whiskermenu-plugin
+      - xfconf
+      - xfdesktop
+      - xfwm4
+      - xorg-x11-drv-amdgpu
+      - xorg-x11-drv-ati
+      - xorg-x11-drv-evdev
+      - xorg-x11-drv-libinput
+      - xorg-x11-drv-nouveau
+      - xorg-x11-drv-qxl
+      - xorg-x11-drv-wacom
+      - xorg-x11-server-Xorg
+      - xorg-x11-xauth
+      - xorg-x11-xinit
+      - xorg-x11-fonts-misc
+
+      # Input
+      - florence
+      - ibus
+      - ibus-uniemoji
+      - ibus-typing-booster
 
       # Theming
       - breeze-cursor-theme
@@ -27,7 +93,6 @@ modules:
       - mint-themes-gtk4
       - mint-y-icons
       - source-foundry-hack-fonts
-      - xorg-x11-fonts-misc
 
       # Wayland
       - brightnessctl
@@ -43,29 +108,12 @@ modules:
       - wlr-randr
       - xfce4-session-wayland-session
 
-    remove:
-      # Apps replaced by Flatpaks
-      - atril
-      - galculator
-      - firefox
-      - firefox-langpacks
-      - libmousepad0
-      - mousepad
-      - ristretto
-      - xarchiver
-
-      # Themes replaced by mint-*
-      - greybird-dark-theme
-      - greybird-light-theme
-      - greybird-xfce4-notifyd-theme
-      - greybird-xfwm4-theme
-      - xfwm4-themes
-
   - type: default-flatpaks
     notify: true
     system:
       install:
         - ca.desrt.dconf-editor 
+        - org.gnome.baobab
         - org.gnome.DejaDup
         - org.gnome.Evince
         - org.gnome.Evolution
@@ -73,6 +121,8 @@ modules:
         - org.gnome.FileRoller
         - org.mozilla.firefox
         - org.libreoffice.LibreOffice
+        - org.xfce.mousepad
         - io.github.Qalculate
+        - org.xfce.ristretto
         - org.gnome.Totem
       user: {}
