@@ -41,6 +41,7 @@ modules:
       - swaylock
       - waybar
       - wlr-randr
+      - xfce4-session-wayland-session
 
     remove:
       # Apps replaced by Flatpaks
