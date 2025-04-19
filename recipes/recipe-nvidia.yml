@@ -1,8 +1,11 @@
 ---
 name: extant-os-nvidia
 description: OS based on Univeral Blue with the XFCE desktop (includes proprietary NVIDIA drivers)
-base-image: ghcr.io/ublue-os/base-nvidia-open
+base-image: ghcr.io/ublue-os/base-main
 image-version: latest
 
 modules:
   - from-file: common.yml
+  - type: akmods
+    install:
+      - nvidia
