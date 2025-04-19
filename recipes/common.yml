@@ -29,6 +29,19 @@ modules:
       - source-foundry-hack-fonts
       - xorg-x11-fonts-misc
 
+      # Wayland
+      - brightnessctl
+      - grim
+      - kanshi
+      - labwc
+      - labwc-menu-generator
+      - slurp
+      - swaybg
+      - swayidle
+      - swaylock
+      - waybar
+      - wlr-randr
+
     remove:
       # Apps replaced by Flatpaks
       - atril

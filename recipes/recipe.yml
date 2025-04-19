@@ -2,7 +2,7 @@
 name: extant-os
 description: OS based on Univeral Blue with the XFCE desktop 
 base-image: ghcr.io/ublue-os/vauxite-main
-image-version: 41
+image-version: latest
 
 modules:
   - from-file: common.yml
