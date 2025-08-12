@@ -98,20 +98,6 @@ modules:
       - mint-y-icons
       - source-foundry-hack-fonts
 
-      # Wayland
-      - brightnessctl
-      - grim
-      - kanshi
-      - labwc
-      - labwc-menu-generator
-      - slurp
-      - swaybg
-      - swayidle
-      - swaylock
-      - waybar
-      - wlr-randr
-      - xfce4-session-wayland-session
-
   - type: default-flatpaks
     notify: true
     system:
