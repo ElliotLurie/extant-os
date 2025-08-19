@@ -99,8 +99,14 @@ modules:
       - source-foundry-hack-fonts
 
   - type: default-flatpaks
-    notify: true
-    system:
+    configurations:
+    - scope: user
+      repo:
+        title: Flathub (user)
+    - notify: true
+      scope: system
+      repo:
+        title: Flathub (user)
       install:
         - ca.desrt.dconf-editor 
         - org.gnome.baobab
@@ -115,4 +121,3 @@ modules:
         - io.github.Qalculate
         - org.xfce.ristretto
         - org.gnome.Totem
-      user: {}
